@@ -1,0 +1,50 @@
+   protected void Button1_Click(object sender, EventArgs e)
+    {
+        double sum=0;
+        if (C1.Checked)
+        {
+            double a1 = Convert.ToDouble(T1.Text);
+            double a2 = Convert.ToDouble(P1.Text);
+            sum += a1 * a2;
+        }
+        if (C2.Checked)
+        {
+            double b1 = Convert.ToDouble(T2.Text);
+            double b2 = Convert.ToDouble(P2.Text);
+            sum += b1 * b2;
+        }
+        if (C3.Checked)
+        {
+            double d1 = Convert.ToDouble(T3.Text);
+            double d2 = Convert.ToDouble(P3.Text);
+            sum += d1 * d2;
+        }
+        else
+        {
+
+        }
+        Total.Text = Convert.ToString(sum);
+
+
+        if (R1.SelectedValue=="1")
+        {
+            Label1.Text = R1.SelectedItem.Text;
+        }
+        if (R1.SelectedValue == "3")
+        {
+            Label1.Text = R1.SelectedItem.Text;
+        }
+        if (R1.SelectedValue == "5")
+        {
+            Label1.Text = R1.SelectedItem.Text;
+        }
+        if (R1.SelectedValue == "7")
+        {
+            Label1.Text = R1.SelectedItem.Text;
+        }
+        if (R1.SelectedValue == "10")
+        {
+            Label1.Text = R1.SelectedItem.Text;
+        }
+
+    }
